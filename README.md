@@ -1,1 +1,1 @@
-# static_web
+# Página web estática.
