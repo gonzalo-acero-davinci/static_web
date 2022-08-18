@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0f0e17;
+
+}
+
+/*ENLACE AL SITIO: https://gonzaloacero.000webhostapp.com/*/
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px
+}
+
+.lista-reset {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.redes {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redes a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #ff8906;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.redes a span {
+    font-size: 1.5625rem;
+    position: relative;
+    top: 5px;
+    
+}
+
+
+#Elformulario {
+    border: 2px solid #f25f4c;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+
+
+}
+
+
+#Elformulario label {
+    display: block;
+    margin-top: 10px;
+
+}
+
+#Elformulario textarea {
+    resize: none;
+}
+
+#Elformulario input,
+#Elformulario textarea {
+    width: 100%;
+    padding: 5px;
+    background-color: aliceblue;
+    border: none;
+    border-bottom: 2px solid #f25f4c;
+
+}
+
+#Elformulario input[type=submit] {
+    background-color: #ff8906;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-bottom-width: 0;
+}
+
+/*fuentes*/
+body {
+    font-family: 'Pontano Sans', sans-serif;
+    color: #fffffe;
+
+
+}
+
+h1,
+logo {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h1 {
+    font-size: 3.4375rem;
+
+}
+
+h2,
+h3 {
+    font-family: 'Rasa', serif;
+
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.texto-centrado {
+    text-align: center;
+
+    padding: 120px 0;
+    background-image: url(../imagenes/pattern.png);
+    background-size: 300px;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/*skins*/
+.menu {
+    background-color: #ff8906;
+}
+
+.menu a {
+    color: white;
+}
+
+/*layout mobile first*/
+.menu {
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.gran-contenedor {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+
+.imagen-responsiva {
+    width: 100%;
+    height: auto;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.columna {
+    padding: 20px;
+
+}
+
+.galeria .columna {
+    width: 100%;
+}
+
+.links {
+    color: #ff8906;
+    text-decoration: none;
+
+}
+
+section {
+    padding: 35px;
+
+}
+
+
+
+.contenido-embebido {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+}
+
+.contenido-embebido iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+
+.redes .texto{
+    display: none;
+}
+/*variaciones de layout con mediaqueries*/
+@media (min-width:768px) {
+    .fila {
+        margin-right: -15px;
+        margin-left: -15px;
+
+    }
+
+    .galeria .columna {
+        width: 50%;
+    }
+
+    .redes .texto{
+        display: inline;
+    }
+    .redes a span {
+        left: -5px;
+    }
+}
+
+@media (min-width:1024px) {
+    h1 {
+        font-size: 4.6875rem;
+    }f
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu ul a {
+        margin: 0 10px;
+    }
+
+    .galeria .columna {
+        width: 33.3333%;
+    }
+
+    section {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+
+}
